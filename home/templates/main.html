@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nova — Creative Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% block content %}
+
+
+
+{% endblock %}
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">No<span>va</span></a>
+    <h2>Welcome {{ user.username }}</h2>
+    <a href="/change-password/">Change Password</a>
+
+    
+    <ul>
+      <li><a href="#services">Work</a></li>
+      <li><a href="#work">Portfolio</a></li>
+      <li><a href="#contact">Studio</a></li>
+      <li><a href="/logout/">Logout</a></li>
+      <li><a href="/change-password/">Change Password</a></li>
+
+    {% comment %} </ul> {% endcomment %}
+    <a href="#contact" class="nav-cta">Start a Project</a>
+  </nav>
+
+  <!-- HERO -->
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Nova Creative Studio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Dribbble</a>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<h2>Student List</h2>
+
+{% for student in object_list %}
+
+<p>
+
+{{ student.name }} - {{ student.age }}-{{student.email}}
+
+</p>
+
+{% endfor %}
